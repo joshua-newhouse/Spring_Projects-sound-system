@@ -33,7 +33,9 @@ public class CDPlayerTest {
 	@Test
 	public void testPlay() {
 		cdPlayer.play();
-		assertEquals("Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles.",
-			LOG.getLog());
+
+		String expectedOutput = "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles.\n";
+
+		assertTrue(expectedOutput.equals(LOG.getLog()));
 	}
 }
